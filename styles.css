@@ -1,0 +1,118 @@
+body { 
+    background-color: black; 
+    color: #E0E0E0; 
+    font-size: 40px; 
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.8; 
+    text-align: center;
+}
+h1, h2 { 
+    color: #F59E0B; 
+    font-size: 50px; 
+    font-weight: bold; 
+}
+h3 { 
+    color: #FFFFFF; 
+    font-size: 36px; 
+    font-weight: bold; 
+}
+.highlight {
+    color: #F59E0B;
+    font-weight: bold;
+}
+.separator {
+    width: 80%;
+    height: 4px;
+    background-color: #F59E0B;
+    margin: 10px auto;
+}
+.center-text { 
+    text-align: center; 
+    margin-bottom: 40px; 
+}
+.content { 
+    padding: 50px; 
+}
+
+/* STYLE DES NUMÉROS 1, 2, 3 (rond orange sans arrière-plan) */
+.circle { 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    border: 4px solid #F59E0B; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #F59E0B; 
+    margin: 30px auto; 
+}
+
+/* ANIMATION CONTINUE DES BOUTONS */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 10px rgba(16,185,129,0.5); }
+    50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(16,185,129,0.7); }
+    100% { transform: scale(1); box-shadow: 0 0 10px rgba(16,185,129,0.5); }
+}
+
+.btn-green { 
+    background-color: #10B981; 
+    color: white; 
+    font-weight: bold; 
+    padding: 20px 40px; 
+    border-radius: 30px; 
+    display: inline-block; 
+    text-align: center; 
+    font-size: 36px; 
+    animation: pulse 2s infinite ease-in-out;
+}
+.btn-green:hover { 
+    background-color: #059669; 
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(16,185,129,0.7); 
+}
+
+/* STYLE DE L'ICÔNE DE VALIDATION (ANIMATION) */
+@keyframes checkmark {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.checkmark-animation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle-check {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #10B981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: checkmark 1s ease-in-out;
+    box-shadow: 0 0 15px rgba(16,185,129,0.7);
+}
+
+.checkmark {
+    width: 35px;
+    height: 70px;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+}
+
+/* STYLE DES CHAMPS DU FORMULAIRE */
+input {
+    width: 80%;
+    padding: 20px;
+    margin: 15px 0;
+    border: 2px solid #F59E0B;
+    border-radius: 10px;
+    font-size: 36px;
+    background-color: transparent;
+    color: white;
+}
