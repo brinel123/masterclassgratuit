@@ -1,34 +1,34 @@
 body { 
     background-color: black; 
     color: #E0E0E0; 
-    font-size: 18px; /* Augmenté pour plus de lisibilité */
+    font-size: 16px; /* Légèrement réduit pour plus d’espace */
     font-family: 'Inter', sans-serif; 
-    line-height: 2; /* Espacement plus grand pour un affichage plus fluide */
+    line-height: 1.8; /* Espacement bien équilibré */
     text-align: center;
-    padding: 20px; /* Ajout d'un padding pour éviter que le texte soit collé au bord */
+    padding: 20px; /* Ajout d'un padding pour éviter que le texte touche les bords */
 }
 
 /* TITRE PRINCIPAL */
 h1 { 
     color: #FFFFFF; /* Blanc pour MIGUÊL HOUNYO */
-    font-size: 32px; /* Augmenté pour bien ressortir */
+    font-size: 26px; /* Réduit pour s’intégrer mieux */
     font-weight: bold; 
-    margin-bottom: 15px; /* Ajout d'espace sous le titre */
+    margin-bottom: 10px;
 }
 
 /* SOUS-TITRES */
 h2 { 
     color: #F59E0B; 
-    font-size: 26px; /* Agrandi pour plus d’impact */
+    font-size: 22px; /* Ajusté pour plus d’espace */
     font-weight: bold; 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 h3 { 
     color: #FFFFFF; 
-    font-size: 22px; /* Ajusté pour être plus lisible */
+    font-size: 18px; /* Légèrement réduit pour plus d’équilibre */
     font-weight: bold; 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /* MISE EN VALEUR DES MOTS CLÉS */
@@ -40,43 +40,43 @@ h3 {
 /* LIGNE DE SÉPARATION */
 .separator {
     width: 80%;
-    height: 4px;
+    height: 3px; /* Légèrement réduit pour ne pas surcharger */
     background-color: #F59E0B;
-    margin: 15px auto; /* Augmenté pour créer plus d'espace */
+    margin: 12px auto; 
 }
 
 /* TEXTES PRINCIPAUX (Texte d’explication, liens, etc.) */
 .center-text { 
     text-align: center; 
-    font-size: 18px; /* Augmenté pour améliorer la lisibilité */
-    margin-bottom: 50px; /* Ajout d’un espace plus grand entre les paragraphes */
+    font-size: 16px; /* Ajusté pour un rendu plus léger */
+    margin-bottom: 30px; 
 }
 
 /* CONTENU PRINCIPAL */
 .content { 
-    padding: 60px; /* Augmenté pour donner plus d’espace */
+    padding: 40px; /* Réduit pour mieux organiser l’espace */
 }
 
 /* STYLE DES NUMÉROS 1, 2, 3 (rond orange sans arrière-plan) */
 .circle { 
-    width: 90px; /* Augmenté pour être plus visible */
-    height: 90px; 
+    width: 60px; /* Réduit pour occuper moins de place */
+    height: 60px; 
     border-radius: 50%; 
-    border: 4px solid #F59E0B; 
+    border: 3px solid #F59E0B; /* Réduit l’épaisseur du contour */
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    font-size: 26px; /* Augmenté pour être plus clair */
+    font-size: 18px; /* Réduit pour s’adapter à la nouvelle taille */
     font-weight: bold; 
     color: #F59E0B; 
-    margin: 40px auto; /* Plus d’espace autour */
+    margin: 25px auto; /* Ajusté pour un bon espacement */
 }
 
 /* ANIMATION CONTINUE DES BOUTONS */
 @keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 0 10px rgba(16,185,129,0.5); }
-    50% { transform: scale(1.1); box-shadow: 0 0 15px rgba(16,185,129,0.7); }
-    100% { transform: scale(1); box-shadow: 0 0 10px rgba(16,185,129,0.5); }
+    0% { transform: scale(1); box-shadow: 0 0 6px rgba(16,185,129,0.5); }
+    50% { transform: scale(1.05); box-shadow: 0 0 10px rgba(16,185,129,0.7); }
+    100% { transform: scale(1); box-shadow: 0 0 6px rgba(16,185,129,0.5); }
 }
 
 /* BOUTONS & LIENS */
@@ -84,18 +84,18 @@ h3 {
     background-color: #10B981; 
     color: white; 
     font-weight: bold; 
-    padding: 20px 50px; /* Agrandi pour plus de confort */
-    border-radius: 30px; 
+    padding: 10px 25px; /* Réduit pour éviter qu’ils soient trop imposants */
+    border-radius: 25px; /* Ajusté pour un rendu plus compact */
     display: inline-block; 
     text-align: center; 
-    font-size: 22px; /* Augmenté pour un meilleur impact */
+    font-size: 16px; /* Diminué pour s’intégrer mieux */
     animation: pulse 2s infinite ease-in-out;
-    margin-top: 20px; /* Ajout d’espace au-dessus des boutons */
+    margin-top: 15px;
 }
 .btn-green:hover { 
     background-color: #059669; 
-    transform: scale(1.1); 
-    box-shadow: 0 6px 12px rgba(16,185,129,0.7); 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(16,185,129,0.7); 
 }
 
 /* STYLE DE L'ICÔNE DE VALIDATION (ANIMATION) */
@@ -107,37 +107,37 @@ h3 {
 .checkmark-animation {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .circle-check {
-    width: 140px; /* Augmenté pour un impact visuel fort */
-    height: 140px; 
+    width: 100px; /* Réduit pour être plus discret mais toujours visible */
+    height: 100px; 
     border-radius: 50%;
     background: #10B981;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: checkmark 1s ease-in-out;
-    box-shadow: 0 0 20px rgba(16,185,129,0.7);
+    box-shadow: 0 0 15px rgba(16,185,129,0.7);
 }
 
 .checkmark {
-    width: 45px;
-    height: 90px;
+    width: 30px;
+    height: 60px;
     border: solid white;
-    border-width: 0 12px 12px 0;
+    border-width: 0 8px 8px 0;
     transform: rotate(45deg);
 }
 
 /* STYLE DES CHAMPS DU FORMULAIRE */
 input {
-    width: 85%; /* Agrandi pour une meilleure visibilité */
-    padding: 18px; /* Plus de confort pour la saisie */
-    margin: 20px 0; /* Plus d’espace entre les champs */
+    width: 80%; /* Ajusté pour garder une bonne disposition */
+    padding: 12px; /* Réduit pour éviter qu’ils soient trop grands */
+    margin: 15px 0; 
     border: 2px solid #F59E0B;
-    border-radius: 10px;
-    font-size: 20px; /* Augmenté pour une lecture facile */
+    border-radius: 8px;
+    font-size: 16px; /* Réduit pour mieux s’intégrer */
     background-color: transparent;
     color: white;
 }
